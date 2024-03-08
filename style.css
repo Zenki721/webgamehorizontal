@@ -1,0 +1,210 @@
+﻿body {
+    background-image: url("title_flame.png");
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title_page, .question_page, .rule_page {
+    text-align: center;
+} 
+h1 {
+    text-shadow: -1px -1px 1px #aaa, 0px 4px 1px rgba(0, 0, 0, 0.5), 4px 4px 5px rgba(0, 0, 0, 0.7), 0px 0px 7px rgba(0, 0, 0, 0.4);
+    color:burlywood;
+    position:relative;
+    top:130px;
+    
+}
+#start, #rule {
+    position: relative;
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    color: #FFF;
+    background: #fd9535; /*色*/
+    border-radius: 4px; /*角の丸み*/
+    box-shadow: inset 0 2px 0 rgba(255,255,255,0.2), inset 0 -2px 0 rgba(0, 0, 0, 0.05);
+    font-weight: bold;
+    border: solid 2px #d27d00; /*線色*/
+    top: 240px;
+    left: 10px;
+}
+
+#start,#rule:active {
+    /*押したとき*/
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.30);
+}
+
+.rule_page {
+    position: relative;
+    top: 35%;
+    width: 70%;
+    margin-left: 182px;
+    border: thick double #32a1ce;
+    height:105px;
+}
+.question_page {
+   
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#question {
+    position: relative;
+    top: 130px;
+    font-size: smaller;
+}
+#hantei {
+    position: relative;
+    left: 60%;
+    top: 300px;
+}
+button {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(45deg, lightgreen 0%, #ff8b5f 100%);
+    transition: .4s;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 25px 80px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 26px;
+    margin: 20px 0px;
+    cursor: pointer;
+    top: 140px;
+    position: relative;
+    left: 28%;
+}
+/* ボタンのホバーエフェクト */
+    button:hover {
+        background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+    }
+    #next0{
+        left:45%;
+    }
+#next1 {
+    position: absolute;
+    left: 70%;
+    top: 365px;
+}
+#answer {
+    position: relative;
+    width: 60%;
+    left: 15%;
+    top: 150px;
+}
+.balloon4 {
+    position: relative;
+    margin: 2em 0 2em 40px;
+    padding: 15px;
+    background: #fff0c6;
+    border-radius: 30px;
+}
+
+    .balloon4:before {
+        content: "";
+        position: absolute;
+        left: -38px;
+        width: 13px;
+        height: 12px;
+        bottom: 0;
+        background: #fff0c6;
+        border-radius: 50%;
+    }
+
+    .balloon4:after {
+        content: "";
+        position: absolute;
+        left: -24px;
+        width: 20px;
+        height: 18px;
+        bottom: 3px;
+        background: #fff0c6;
+        border-radius: 50%;
+    }
+
+    .balloon4 p {
+        margin: 0;
+        padding: 0;
+    }
+
+.result {
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    top: 230px;
+}
+input[type="checkbox"] {
+    position: relative;
+    top: 12%;
+    left: 220px;
+}
+label {
+    top: 12%;
+    position: relative;
+    margin-left: 60px;
+    left: 164px;
+}
+#img0 {
+    width: 40%;
+    position: absolute;
+    top:0;
+   
+}
+#img1, #img2 {
+    width: 50%;
+    position: absolute;
+    left: 300px;
+}
+strong {
+    top: 60%;
+    position: absolute;
+    left: 55%;
+    font-size: 40px;
+}
+#comment {
+    font-size: 50px;
+    top: 70%;
+    position: absolute;
+    left: 10%;
+    line-height: 0.95em;
+    font-weight: bold;
+    color: #FFF;
+    text-shadow: 0 0 0.05em #F06292, 0 0 0.10em #F06292, 0 0 0.15em #F06292, 0 0 0.30em #F06292;
+    filter: saturate(80%);
+}
+#restart {
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 8px 10px 5px 10px;
+    text-decoration: none;
+    color: #FFA000;
+    background: #fff1da;
+    border-bottom: solid 4px #FFA000;
+    border-radius: 15px 15px 0 0;
+    transition: .4s;
+    left:68%;
+}
+    #restart:hover {
+        background: #ffc25c;
+        color: #FFF;
+    }
+#maru,#batsu{
+    width: 30%;
+    left: 35%;
+    position: fixed;
+    top:45%;
+}
+.mondai {
+    position: relative;
+    top: -140px;
+}
+p {
+    line-height: 0.95em;
+    font-weight: bold;
+    color: #FF6F00;
+    text-shadow: 0 0.01em 0 #999, 0 0.02em 0 #888, 0 0.03em 0 #777, 0 0.04em 0 #666, 0 0.05em 0 #555, 0 0.06em 0 #444, 0 0.08em 0 #000;
+}

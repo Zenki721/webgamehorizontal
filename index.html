@@ -1,0 +1,63 @@
+﻿
+<!--問題文の配列を用意
+問題文を１つ表示します
+連想配列　[選択肢:回答]　のように割り当てます。
+選択肢を３つ画面に表示します、ユーザーが選択肢をクリックしたら画面に回答が表示されます。
+問題文１つに対して五回回答を選択したら画面遷移を行います
+ドラッグアンドドロップ画面に移動
+ドラッグ要素を５つ用意し、ドロップエリアを３つ用意する
+正しいエリアに正解の要素を３つともドロップしたら正解としてスコア加算、
+不正解の場合はヒントを表示してもう一度遊ぶボタンと次の問題へボタンを設置
+次の問題へボタンを押したら問題文２を表示しますという風な処理を５周したらリザルト画面へ画面遷移をします
+スコアを画面に表示してもう一度遊ぶボタンを配置します-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>水平思考</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+    
+
+</head>
+<body>
+    <div class="title_page">
+        <h1>ゼウスの部屋</h1>
+        <button id="start">スタート</button>
+        <button id="rule">ルール説明</button>
+        <img id="img0" style="display:none;" src="img0.png" />
+    </div>
+    <div class="rule_page"></div>
+
+    <div class="question_page">
+        <div id="question"></div>
+        <div id="choices"></div>
+        <div id="answer" class="balloon4"></div>
+        <button id="next0" type="button" style="display:none;">次へ進む</button>
+    </div>
+
+    <div class="drop_page">
+        <div  class="result">*チェックボックスをクリックすると色が順番に赤色、橙色、青色に一度だけ変化するよ</div>
+        
+        <form id="quiz">
+
+            <button id="hantei" type="button">正解は・・・</button>
+            <img id="maru" style="display:none;" src="maru.png" />
+            <img id="batsu" style="display:none;" src="batsu.png" />
+            <button id="next1" type="button" style="display:none;">次の問題へ進む</button>
+        </form>
+        
+    </div>
+    <div class="result_page">
+        <img id="img1" style="display:none;" src="img1.png" />
+        <img id="img2" style="display:none;" src="img2.png" />
+        <div id="comment"></div>
+        <button id="restart">もう一度遊ぶ</button>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
